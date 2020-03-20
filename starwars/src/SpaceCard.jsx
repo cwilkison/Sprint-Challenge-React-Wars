@@ -7,7 +7,6 @@ import {
 
 
   const SpaceFlex = styled.div`
-  color: black;
   width: 200px;
   max-height: 300px;
   display: flex;
@@ -23,7 +22,7 @@ const SpaceCard = (props) => {
   return (
     <SpaceFlex>
     <Card body inverse color="info">
-      <CardHeader>Name: {props.name}</CardHeader>
+      <h5 Heading><Badge color="secondary" pill>Name: {props.name}</Badge></h5>
       <CardText>Birth Year: {props.birth}</CardText>
       <CardText>Height: {props.height}</CardText>
       <CardText>Mass: {props.weight}</CardText>
@@ -33,3 +32,4 @@ const SpaceCard = (props) => {
 };
 
 export default SpaceCard;
+

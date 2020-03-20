@@ -9,7 +9,7 @@ const HeaderContext = styled.div`
 color: black;
 margin:5% 0;
 font-size:3rem;
-font-family: sans-serif;
+font-family: sans-serif
 `;
 
 const App = () => {
