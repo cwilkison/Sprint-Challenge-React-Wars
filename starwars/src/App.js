@@ -1,6 +1,16 @@
 import React from 'react';
 import './App.css';
 import CardPage from "./CardPage";
+import styled from "styled-components";
+
+
+
+const HeaderContext = styled.div`
+color: black;
+margin:5% 0;
+font-size:3rem;
+font-family: sans-serif;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -12,7 +22,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <HeaderContext>React Wars</HeaderContext>
       <CardPage/>
     </div>
   );

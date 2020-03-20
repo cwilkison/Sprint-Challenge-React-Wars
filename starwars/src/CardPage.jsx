@@ -20,6 +20,7 @@ export default function CardPage() {
   }, []);
   return (
     <Container>
+      <Row xs="4">
       {character.map(characters => {
         return (
           <SpaceCard
@@ -30,6 +31,7 @@ export default function CardPage() {
           />
         );
       })}
+      </Row>
     </Container>
   );
 }
